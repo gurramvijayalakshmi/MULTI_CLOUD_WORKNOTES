@@ -40,7 +40,7 @@ __Step 4__: Install Jenkins
 ```
 sudo apt install jenkins -y
 ```
-![preview](./images/jenkins5.png)
+![preview](./Images/jenkins5.png)
 
 __Step 5__: Start Jenkins
 * Start the Jenkins service:

@@ -15,7 +15,7 @@ OpenJDK ( Open Java Development Kit) is a free and open-source implementation of
   wget https://download.java.net/java/GA/jdk16.0.1/7147401fd7354114ac51ef3e1328291f/9/GPL/openjdk-17.0.2_linux-x64_bin.tar.gz
 
   ```
-
+![preview](./Images/jdk1.png)
  __Step 2__: Extractig the tar file.
   * Create a directory for the JDK installation, commonly in '/opt':
   ```
@@ -68,5 +68,5 @@ OpenJDK ( Open Java Development Kit) is a free and open-source implementation of
   OpenJDK 64-Bit Server VM (build 16.0.1+9-24, mixed mode, sharing)
   javac 16.0.1
   ```
-
+  ![preview](./Images/jdk2.png)
 

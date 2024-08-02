@@ -4,7 +4,7 @@ OpenJDK ( Open Java Development Kit) is a free and open-source implementation of
  
  To install OpenJDK on a Linux system using a '.tar.gz' file, follow these steps: 
 
- - Step 1: Downloading OpenJDK in linux downloads folder.
+ __Step 1__: Downloading OpenJDK in linux downloads folder.
  * Navigate to the directory where you want to download OpenJDK, for example,
  ```
  cd ~/Downloads
@@ -16,7 +16,7 @@ OpenJDK ( Open Java Development Kit) is a free and open-source implementation of
 
   ```
 
-  - Step 2: Extractig the tar file.
+ __Step 2__: Extractig the tar file.
   * Create a directory for the JDK installation, commonly in '/opt':
   ```
   sudo mkdir /opt/jdk
@@ -27,7 +27,7 @@ OpenJDK ( Open Java Development Kit) is a free and open-source implementation of
   sudo tar xvf ~/Downloads/openjdk-16.0.1_linux-x64_bin.tar.gz -C /opt/jdk
   ``` 
 
-  - Step 3: Setting Up the Alternatives
+  __Step 3__: Setting Up the Alternatives
   * Update the alternatives system to recognize the new JDK:
   ```
   sudo update-alternatives --install /usr/bin/java java /opt/jdk/jdk-16.0.1/bin/java 1000
@@ -38,7 +38,7 @@ OpenJDK ( Open Java Development Kit) is a free and open-source implementation of
   sudo update-alternatives --install /usr/bin/javac javac /opt/jdk/jdk-16.0.1/bin/javac 1000
   ```
 
-  -Step 4: Configuring the Environment Variables
+  __Step 4__: Configuring the Environment Variables
   * Open your profile configuration file (e.g., .bashrc or /etc/profile):
   ```.
   nano ~/.bashrc
@@ -55,7 +55,7 @@ OpenJDK ( Open Java Development Kit) is a free and open-source implementation of
   source ~/.bashrc
   ```
 
-  - Step 5: Verifing Installation
+  __Step 5__: Verifing Installation
   * Check the installed version of Java to confirm the installation:
   ```
   java -version && javac -version

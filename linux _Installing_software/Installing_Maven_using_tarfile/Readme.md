@@ -6,7 +6,7 @@ Maven is a build automation tool developed using the Java programming language. 
 To Install, we need to install openjdk because these two are interact. the maven is been run using java.
 To install Apache Maven on a Linux system using a .tar.gz file, follow these detailed steps:
 
-- Step 1: Download Maven
+__Step 1__: Download Maven
 * Navigate to the directory where you want to download Maven, such as ~/Downloads:
 ```
 
@@ -20,7 +20,7 @@ wget https://downloads.apache.org/maven/maven-3/3.9.8/binaries/apache-maven-3.9.
 
 ```
 
-- Step 2: Extract the Archive
+ __Step 2__: Extract the Archive
 * Create a directory for Maven, typically in /opt:
 ```
 sudo mkdir /opt/maven
@@ -32,7 +32,7 @@ sudo mkdir /opt/maven
 sudo tar -xvzf apache-maven-3.9.8-bin.tar.gz -C /opt/maven --strip-components=1
 ```
 
-- Step 3: Set Up Environment Variables
+__Step 3__: Set Up Environment Variables
 * Open your profile configuration file (e.g., .bashrc, .bash_profile, or /etc/profile):
 ```
 
@@ -52,7 +52,7 @@ export PATH=${M2_HOME}/bin:${PATH}
 source ~/.bashrc
 ```
 
-- Step 4: Verify Installation
+__Step 4__: Verify Installation
 * To confirm that Maven is installed correctly, check the version:
 ```
 

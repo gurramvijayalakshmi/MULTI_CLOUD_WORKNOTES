@@ -6,7 +6,7 @@ Jenkins is an open-source Continuous Integration server written in Java for orch
 ### Jenkins Installation
 
 To install Jenkins on a Linux system using the apt package manager, follow these steps:
-- Step 1: Install Java
+__Step 1__: Install Java
 * Jenkins requires Java to run. First, ensure your package list is up to date and install OpenJDK 17:
 ```
 sudo apt update
@@ -18,7 +18,7 @@ sudo apt install openjdk-17-jdk
 java -version
 ```
 
-- Step 2: Add Jenkins Repository
+__Step 2__: Add Jenkins Repository
 * Import the GPG key for the Jenkins repository:
 ```
 curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
@@ -29,19 +29,19 @@ curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/s
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
 ```
 
-- Step 3: Update Package List
+__Step 3__: Update Package List
 * After adding the Jenkins repository, update your package list again:
 ```
 sudo apt update
 ```
 
-- Step 4: Install Jenkins
+__Step 4__: Install Jenkins
 * Now, install Jenkins:
 ```
 sudo apt install jenkins -y
 ```
 
-- Step 5: Start Jenkins
+__Step 5__: Start Jenkins
 * Start the Jenkins service:
 ```
 sudo systemctl start jenkins
@@ -52,13 +52,13 @@ sudo systemctl start jenkins
 sudo systemctl enable jenkins
 ```
 
-- Step 6: Verify Jenkins Installation
+__Step 6__: Verify Jenkins Installation
 * Check the status of the Jenkins service to confirm it is running:
 ```
 sudo systemctl status jenkins
 ```
 
-- Step 7: Access Jenkins
+__Step 7__: Access Jenkins
 * Open a web browser and navigate to http://localhost:8080 to access the Jenkins interface. You will need to unlock Jenkins using the initial admin password.to find this in a file on the server where the location is '/var/lib/jenkins/secrets/initialAdminPassword'.
 ```
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
